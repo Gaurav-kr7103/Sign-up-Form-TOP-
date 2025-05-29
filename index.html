@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./my-styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <img src="./image/halie-west-bTzpau9mKT4-unsplash.jpg" >
+        
+        <div class="signupform">
+            <div class="header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepeset dreams. <br>Sign up now to get started.</p>
+                <p> You <em>know</em> you want to.</p>
+            </div>
+
+            <div class="SIGNUP">
+                <p>Let's do this!</p>
+                <form action="./index.html" method="post" id="signupForm">
+                    <div class="firstcol">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+                    </div>
+
+                    <div class="secondcol">
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                        
+                        </div>
+                        <div>
+                            <label for="pNo">Phone Number</label>
+                            <input type="tel" name="pNo" id="pNo" placeholder="Phone Number" required>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+
+            <div class="footer">
+                <button type="submit" id="btn" form="signupForm">Create Account</button>
+                <p>Already have an account? <a href="./login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ebe9e8;
+    --font-size-bold : 16px;
+    --font-size-normal : 9px;
+
+    --padding-left-side : 20px;
+    /* outline: 2px solid #000; */
+}
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.container {
+    outline : solid 10px red;;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    height: 100vh;
+    width: auto;
+}
+
+.signupform {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.signupform * {
+    background-color: #e9e9e9;
+}
+.signupform div{
+    flex : 1;
+    padding-left: var(--padding-left-side);
+    /* outline : 2px solid #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.signupform .header{
+    font-size: var(--font-size-bold);
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* /////////////////////////////form starts */
+
+
+.signupform .SIGNUP ,.signupform .SIGNUP * {
+    /* outline: solid 2px #000; */
+    background-color: white;
+}
+.signupform .SIGNUP {
+    padding-top : 20px;
+    padding-bottom : 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.SIGNUP p {
+    font-size: var(--font-size-bold);
+    font-weight: bold;
+    color: #000;
+}
+
+.SIGNUP form {
+    flex : 1;
+    display: flex;
+    justify-content: space-between;
+}
+.SIGNUP form div {
+    padding-left : 0px;
+}
+
+label {
+    font-size : var(--font-size-normal);
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    letter-spacing: 1px;
+}
+.signupform .SIGNUP input {
+    border: 1px solid #E5E7EB;
+    width: 200px;
+    height : 30px;
+    background-color:#fafaec;
+    border-radius: 5px;
+    font-size : var(--font-size-normal);
+}
+
+.signupform .SIGNUP input:focus {
+    border : 0px solid green;
+    background-color: #fff;
+}
+.signupform .SIGNUP input:hover {
+    outline : 2px solid lightblue;
+}
+
+/* /////////////////////////////form end */
+
+
+
+.container .signupform .footer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container .signupform .footer *{
+    padding-top: 10px;
+}
+.container .signupform .footer #btn {
+    width: 200px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #69c12c;
+}
+.container .signupform .footer #btn:hover {
+    border: 0px;
+    background-color: #84eb3c;
+}
